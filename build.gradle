@@ -17,6 +17,7 @@ configurations {
 	}
 }
 
+
 repositories {
 	mavenCentral()
 }
@@ -27,8 +28,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
